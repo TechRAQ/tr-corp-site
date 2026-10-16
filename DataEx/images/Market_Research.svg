@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="80" viewBox="0 0 100 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6328" data-name="Rectangle 6328" width="41.321" height="41.321" transform="translate(24.186 27)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Market_Research" transform="translate(-16 -10)">
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="40" cy="40" r="40" transform="translate(25 10)" fill="#e6eeff"/>
+    <g id="Group_11539" data-name="Group 11539">
+      <rect id="Rectangle_6327" data-name="Rectangle 6327" width="100" height="58" rx="8" transform="translate(16 19)" fill="#fff"/>
+      <g id="Group_11538" data-name="Group 11538" clip-path="url(#clip-path)">
+        <path id="Path_90" data-name="Path 90" d="M61.936,36.035a20.669,20.669,0,0,0-7.51-6.675,7.669,7.669,0,0,1-2.647,6.424,13.782,13.782,0,0,1,6.729,13.754,4.906,4.906,0,0,1,1.2-.37l.814-.04c.318-.456.629-.925.92-1.4a8.023,8.023,0,0,1,.662-1.19c.079-.165.159-.324.232-.482.622-1.322,1.833-.331,2.964-.866A17.71,17.71,0,0,0,61.936,36.035Z" fill="#5d5fef"/>
+        <path id="Path_91" data-name="Path 91" d="M42.271,65.711h.179c-.086-.423-.179-.839-.3-1.262-.046-.178-.106-.357-.152-.535v-.046l-.476-1.507a3.52,3.52,0,0,1-.146-1.322A13.726,13.726,0,0,1,34.615,56.9a20.135,20.135,0,0,1-4.01,3.245,6.962,6.962,0,0,1-1.615.78c2.508,3.027,6.908,5.446,10.435,6.609C40.438,66.537,40.775,65.711,42.271,65.711Z" fill="#fece4d"/>
+        <path id="Path_92" data-name="Path 92" d="M35.316,57.641a13.765,13.765,0,0,1,.062-19.918,13.8,13.8,0,0,1,17.863-.961l3.05-6.285c-7.278-4.719-15.073-4.627-23.112.185a20.653,20.653,0,0,0-5.373,28.724,20.363,20.363,0,0,0,1.74,2.2Z" fill="#9fc0ff"/>
+        <path id="Path_93" data-name="Path 93" d="M39.991,67.177l1.529-5.67A14.279,14.279,0,0,0,58.961,45.58l5.943.1A19.126,19.126,0,0,1,57.762,62.91a21.633,21.633,0,0,1-6.648,3.831C47.562,68.01,44.488,68.171,39.991,67.177Z" fill="#0080ff" stroke="#0080ff" stroke-width="1"/>
+        <circle id="Ellipse_20" data-name="Ellipse 20" cx="11.352" cy="11.352" r="11.352" transform="translate(33.703 36.549)" fill="#e7eeff"/>
+      </g>
+      <rect id="Rectangle_6329" data-name="Rectangle 6329" width="4" height="4" rx="2" transform="translate(77.229 32)" fill="#5d5fef"/>
+      <rect id="Rectangle_6330" data-name="Rectangle 6330" width="4" height="4" rx="2" transform="translate(77.229 42.086)" fill="#3d7ffc"/>
+      <rect id="Rectangle_6331" data-name="Rectangle 6331" width="4" height="4" rx="2" transform="translate(77.229 52.162)" fill="#76a5ff"/>
+      <rect id="Rectangle_6332" data-name="Rectangle 6332" width="4" height="4" rx="2" transform="translate(77.229 62.247)" fill="#fece4d"/>
+    </g>
+    <rect id="Rectangle_6333" data-name="Rectangle 6333" width="21" height="4" rx="2" transform="translate(85 32)" fill="#edf1f6"/>
+    <rect id="Rectangle_6334" data-name="Rectangle 6334" width="16" height="4" rx="2" transform="translate(85 42)" fill="#edf1f6"/>
+    <rect id="Rectangle_6335" data-name="Rectangle 6335" width="19" height="4" rx="2" transform="translate(85 52)" fill="#edf1f6"/>
+    <rect id="Rectangle_6336" data-name="Rectangle 6336" width="13" height="4" rx="2" transform="translate(85 62)" fill="#edf1f6"/>
+  </g>
+</svg>

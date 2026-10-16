@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="29.25" viewBox="0 0 90 29.25">
+  <g id="Group_686" data-name="Group 686" transform="translate(-1630 -1880.25)">
+    <g id="Icon_ion-ios-arrow-dropdown" data-name="Icon ion-ios-arrow-dropdown" transform="translate(1687.375 1912.875) rotate(-90)">
+      <path id="Path_55" data-name="Path 55" d="M10.378,14.815a1.362,1.362,0,0,0,0,1.92l6.729,6.708a1.356,1.356,0,0,0,1.87.042l6.63-6.609a1.355,1.355,0,1,0-1.912-1.92L18,20.566l-5.7-5.759A1.356,1.356,0,0,0,10.378,14.815Z" fill="#0080ff"/>
+      <path id="Path_56" data-name="Path 56" d="M3.375,18A14.625,14.625,0,1,0,18,3.375,14.623,14.623,0,0,0,3.375,18ZM26.747,9.253A12.37,12.37,0,1,1,9.253,26.747,12.37,12.37,0,1,1,26.747,9.253Z" fill="#0080ff"/>
+    </g>
+    <g id="Icon_ion-ios-arrow-dropdown-2" data-name="Icon ion-ios-arrow-dropdown" transform="translate(1630 1909.5) rotate(-90)">
+      <path id="Path_55-2" data-name="Path 55" d="M.4,9.023A1.362,1.362,0,0,1,.4,7.1L7.124.4A1.356,1.356,0,0,1,8.995.354l6.63,6.609a1.355,1.355,0,1,1-1.912,1.92l-5.7-5.611L2.315,9.03A1.356,1.356,0,0,1,.4,9.023Z" transform="translate(6.608 8.787)" fill="#0080ff"/>
+      <path id="Path_56-2" data-name="Path 56" d="M0,14.625A14.625,14.625,0,1,1,14.625,29.25,14.623,14.623,0,0,1,0,14.625Zm23.372,8.747A12.37,12.37,0,1,0,5.878,5.878,12.37,12.37,0,1,0,23.372,23.372Z" fill="#0080ff"/>
+    </g>
+  </g>
+</svg>

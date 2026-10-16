@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^techraq\.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\.techraq\.com [NC]
+RewriteRule ^(.*)$ https://www.techraq.com/$1 [L,R=301]

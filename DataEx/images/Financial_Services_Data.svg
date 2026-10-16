@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="87" height="80" viewBox="0 0 87 80">
+  <g id="Financial_Services_Data" transform="translate(-18 -10)">
+    <circle id="Ellipse_23" data-name="Ellipse 23" cx="40" cy="40" r="40" transform="translate(25 10)" fill="#e6eeff"/>
+    <g id="Group_11542" data-name="Group 11542">
+      <rect id="Rectangle_6337" data-name="Rectangle 6337" width="23" height="65" rx="4" transform="translate(81 20)" fill="#fff"/>
+    </g>
+    <g id="Group_11543" data-name="Group 11543">
+      <rect id="Rectangle_6338" data-name="Rectangle 6338" width="23" height="44" rx="4" transform="translate(49 41)" fill="#fff"/>
+    </g>
+    <g id="Group_11544" data-name="Group 11544">
+      <rect id="Rectangle_6339" data-name="Rectangle 6339" width="22" height="25" rx="4" transform="translate(18 60)" fill="#fff"/>
+    </g>
+    <path id="Path_105" data-name="Path 105" d="M29,66,49.862,48.714l10.9,12.571L87.5,39.5" fill="none" stroke="#0080ff" stroke-linecap="square" stroke-linejoin="round" stroke-width="9"/>
+    <path id="Path_106" data-name="Path 106" d="M101.131,27.409a1,1,0,0,1,1.108,1.314l-7.676,22.16a1,1,0,0,1-1.709.317L77.394,32.871a1,1,0,0,1,.6-1.631Z" fill="#0080ff"/>
+  </g>
+</svg>

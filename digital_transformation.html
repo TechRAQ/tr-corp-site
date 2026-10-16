@@ -1,0 +1,733 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Transformation - TechRAQ</title>
+    <!-- SEO and Meta Tags -->
+    <meta name="description"
+        content="Take your business to the next level by being future-ready with accelerated digital transformation resulting in improved efficiency!">
+    <meta name="keywords" content="Digital Transformation, Business Transformation, Digital Journey">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <style>
+        .digital-journey-suite {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        /* 1. Journey Header Style */
+        .digital-journey-suite .journey-header {
+            border-bottom: 1px solid var(--secondary-lavender);
+            padding-bottom: 40px;
+            margin-bottom: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .journey-header .journey-title {
+            font-weight: 800;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin: 0;
+        }
+
+        .journey-title span {
+            
+            font-style: italic;
+            font-weight: 300;
+            color: var(--bg-dark);
+        }
+
+        /* 2. The Flow Grid */
+        .journey-flow-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: start;
+        }
+
+        /* Vertical Pulse Line */
+        .journey-flow-grid .journey-narrative {
+            position: relative;
+            border-left: 1px solid var(--secondary-lavender);
+            padding-left: 50px;
+        }
+
+        .journey-narrative .journey-point {
+            position: relative;
+            margin-bottom: 60px;
+            transition: all 0.6s;
+        }
+
+        /* The Pulse Dot */
+        .journey-point::before {
+            content: "";
+            position: absolute;
+            left: -56px;
+            top: 10px;
+            width: 11px;
+            height: 11px;
+            background: var(--white);
+            border: 2px solid var(--primary-cyan);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .journey-point:hover {
+            transform: translateX(15px);
+        }
+
+        .journey-point .point-tag {
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--primary-cyan);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .journey-point .point-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            font-weight: 300;
+        }
+
+        .point-text strong {
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        /* 3. The Visual Anchor */
+        .journey-flow-grid .journey-visual-anchor {
+            position: sticky;
+            top: 100px;
+        }
+
+        .journey-visual-anchor .journey-img {
+            border-radius: 20px;
+            box-shadow: 0 40px 80px rgba(0, 129, 173, 0.1);
+            filter: grayscale(100%);
+            transition: all 0.6s;
+        }
+
+        .journey-visual-anchor:hover .journey-img {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+
+        /* 4. The Reimagine Callout Box */
+        .journey-narrative .journey-reimagine-card {
+            background: var(--bg-dark);
+            color: var(--white);
+            padding: 35px;
+            border-radius: 0 30px 30px 30px;
+            margin-top: 40px;
+            box-shadow: 0 20px 40px rgba(0, 129, 173, 0.2);
+        }
+
+        .journey-reimagine-card h5 {
+            
+            font-style: italic;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .journey-reimagine-card i {
+            color: var(--primary-cyan);
+            margin-right: 15px;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 992px) {
+            .journey-flow-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .journey-flow-grid .journey-visual-anchor {
+                position: relative;
+                top: 0;
+                order: -1;
+            }
+
+            .journey-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,600;1,300;1,400&family=Outfit:wght@400;600;700&family=Playfair+Display:ital@0;1&display=swap" />
+    <link rel="stylesheet" href="assets/css/chrome.css?v=20261007m" />
+  </head>
+
+<body class="bg-light">
+
+    <!-- Replacement Header -->
+    <a class="tq-skip" href="#main">Skip to content</a>
+    <div class="tq-progress" aria-hidden="true"></div>
+    <header class="tq-header" data-tq-header>
+      <div class="tq-header__inner">
+        <a class="tq-logo" href="index.html" aria-label="TechRAQ home"><img src="images/techraq-logo.png" alt="TechRAQ" /></a>
+        <nav class="tq-nav" aria-label="Primary">
+          <a href="about.html">Who We Are</a>
+          <div class="tq-nav__item">
+            <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="tq-mega">
+              <div>
+                <span class="tq-mega__label">Service lines</span>
+              <a class="tq-mega__svc" href="services.html#svc-modernization"><i class="fa-solid fa-layer-group"></i><div><b>AI-Led Application Modernization</b><span>Legacy systems to cloud & AI-ready</span></div></a>
+              <a class="tq-mega__svc" href="services.html#svc-transformation"><i class="fa-solid fa-arrows-rotate"></i><div><b>Digital & AI Transformation</b><span>Workflows, portals & practical AI</span></div></a>
+              <a class="tq-mega__svc" href="services.html#svc-product"><i class="fa-solid fa-cube"></i><div><b>Product Engineering, Cloud & DevOps</b><span>Prototype to production</span></div></a>
+              <a class="tq-mega__svc" href="services.html#svc-data"><i class="fa-solid fa-chart-pie"></i><div><b>Data, Analytics & Quality Engineering</b><span>Trusted data, confident releases</span></div></a>
+              <a class="tq-mega__svc" href="services.html#svc-operations"><i class="fa-solid fa-gears"></i><div><b>Process Automation & Managed Services</b><span>Scalable operations & teams</span></div></a>
+              </div>
+              <div class="tq-mega__side">
+                <span class="tq-mega__label">Explore in depth</span>
+              <a href="ai_solutions_enablement.html">AI Solutions & Enablement <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="application_modernization.html">Application Modernization <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="digital_transformation.html">Digital Transformation <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="products_innovation_and_execution.html">Product Engineering <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="agile_dev_devops.html">Continuous Delivery <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="advance_analytics.html">Data Intelligence <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="software_quality_engineering.html">Quality Engineering <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="business_process.html">Process Automation <i class="fa-solid fa-arrow-right"></i></a>
+                <hr />
+                <span class="tq-mega__label">Products</span>
+                <a href="DataEx/index.html" target="_blank" rel="noopener">DataEx <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="qisido.html">Qisido <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="ai-accelerators.html">AI Accelerators</a>
+          <a href="industries.html">Industries</a>
+          <a href="case-studies.html">Case Studies</a>
+          <a href="careers.html">Careers</a>
+        </nav>
+        <a class="tq-btn tq-btn--sm tq-header__cta" href="contact.html">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="tq-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="tqMobile"><span></span><span></span></button>
+      </div>
+    </header>
+    <div class="tq-mobile" id="tqMobile" aria-hidden="true">
+      <a href="index.html">Home <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="about.html">Who We Are <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="services.html">Services <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="ai-accelerators.html">AI Accelerators <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="industries.html">Industries <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="case-studies.html">Case Studies <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="careers.html">Careers <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact.html">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+      <p class="tq-mobile__foot">Talk to us: <a href="mailto:info@techraq.com">info@techraq.com</a> · <a href="tel:+917088999922">+91 708 899 9922</a></p>
+    </div>
+    <span id="main" tabindex="-1"></span>
+
+
+    <!-- Services Banner Section -->
+    <section class="hero-banner">
+        <!-- Decorative Ambient Background -->
+        <div class="hero-glow"></div>
+        <div class="hero-mask"
+            style="background: linear-gradient(105deg, rgba(255, 255, 255, 0.92) 20%, rgba(255, 255, 255, 0.75) 55%, transparent 100%), url('images/banners/digital_transformation.jpg') center/cover no-repeat;">
+        </div>
+
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-10">
+                    <!-- Category Label -->
+                    <div class="category-tag">Services</div>
+
+                    <!-- Main Typography -->
+                    <h1 class="main-headline">
+                        Digital
+                        Transformation
+                    </h1>
+
+                    <!-- Lead Description -->
+                    <p class="sub-headline">
+                        Become Future-Ready by Accelerating your Digital Transformation!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="py-5 mt-5 bg-dark position-relative"
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/banners/digital_transformation.jpg') center/cover no-repeat; min-height: 40vh;">
+        <div class="container h-100 mt-5 pt-3">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center text-md-start">
+                    <h6 class="text-uppercase text-info fw-bold tracking-wider mb-2">Services</h6>
+                    <h1 class="display-3 fw-bold text-white mb-3" >Digital
+                        Transformation</h1>
+                    <h3 class="fw-light text-light">Become Future-Ready by Accelerating your Digital Transformation!
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Exeperience Content Section -->
+    <section class="digital-journey-suite">
+        <div class="container">
+
+            <!-- Journey Header -->
+            <header class="journey-header">
+                <h2 class="journey-title">Total Business Transformation <br><span>Enabling your Digital Journey</span>
+                </h2>
+                <span class="text-muted small fw-bold letter-spacing-2 text-uppercase">Future-Ready
+                    Transformation</span>
+            </header>
+
+            <div class="journey-flow-grid">
+
+                <!-- Sequential Narrative -->
+                <div class="journey-narrative">
+
+                    <div class="journey-point">
+                        <span class="point-tag">Transformation</span>
+                        <p class="point-text">
+                            TechRAQ helps you fundamentally change your <strong>systems, processes, and
+                                technology</strong> across the business unit to achieve measurable improvements in
+                            efficiency and effectiveness.
+                        </p>
+                    </div>
+
+                    <div class="journey-point">
+                        <span class="point-tag">Innovation</span>
+                        <p class="point-text">
+                            Our experts work with your IT and management teams to identify <strong>innovation in
+                                business methods</strong>, accurately estimate capabilities, and detail the required IT
+                            execution.
+                        </p>
+                    </div>
+
+                    <div class="journey-point">
+                        <span class="point-tag">Strategy</span>
+                        <p class="point-text">
+                            We focus on advancing your <strong>Digital Transformation</strong> by detailing the
+                            associated technology required to execute every part of your business strategy successfully.
+                        </p>
+                    </div>
+
+                    <!-- Callout Highlight -->
+                    <div class="journey-reimagine-card">
+                        <h5>
+                            <i class="fa-solid fa-bolt"></i>
+                            "Achieve greater efficiency & customer satisfaction by reimagining the way you do business."
+                        </h5>
+                    </div>
+                </div>
+
+                <!-- Static Visual Anchor -->
+                <div class="journey-visual-anchor">
+                    <img src="images/digital.png" alt="Digital Transformation Journey"
+                        class="img-fluid journey-img w-100">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- <section class="py-5 bg-white">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold text-dark mb-5 text-center" >Total
+                Business Transformation Enabling your Digital Journey</h2>
+            <div class="row g-5 align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="images/digital.png" alt="Transform your business"
+                        class="img-fluid rounded-4 shadow-sm w-100 object-fit-cover" style="max-height: 500px;">
+                </div>
+                <div class="col-lg-6">
+                    <div class="fs-5 text-secondary pe-lg-4">
+                        <p class="mb-4">
+                            TechRAQ helps you fundamentally change your systems, processes, and technology across the
+                            business unit to achieve substantial, measurable improvements in efficiency, effectiveness,
+                            and stakeholder satisfaction.
+                        </p>
+                        <p class="mb-4">
+                            Our accomplished experts work with your IT and management teams to identify potential
+                            innovation in a business method, accurately estimate current capabilities, and detail the
+                            associated IT required to execute that part of the strategy.
+                        </p>
+                        <p class="mb-4 fw-medium text-dark">
+                            Advancing your Digital Transformation!
+                        </p>
+                        <div class="bg-primary text-white p-4 rounded-4 shadow-sm mt-4">
+                            <h4 class="fw-semibold mb-0 fst-italic"><i class="fa-solid fa-bolt me-3 text-info"></i>
+                                Achieve greater efficiency & customer satisfaction by reimagining the way you do
+                                business.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Tabs Approach Section -->
+    <section class="approach-section">
+        <div class="container">
+
+            <!-- Strategic Header -->
+            <header class="approach-header text-center">
+                <span class="approach-subtitle">Methodology</span>
+                <h2 class="display-5 approach-title">Our Strategic Approach</h2>
+                <div class="approach-divider"></div>
+            </header>
+
+            <!-- Navigation Controls -->
+            <div class="approach-nav-container">
+                <ul class="nav nav-pills nav-fill approach-nav-pills" id="methodologyTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="st-analysis-tab" data-bs-toggle="tab"
+                            data-bs-target="#st-analysis" type="button" role="tab">
+                            <i class="fa-solid fa-chart-line"></i> Analysis & Strategy
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="st-upgrade-tab" data-bs-toggle="tab" data-bs-target="#st-upgrade"
+                            type="button" role="tab">
+                            <i class="fa-solid fa-microchip"></i> Model Transformation
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="st-modernize-tab" data-bs-toggle="tab"
+                            data-bs-target="#st-modernize" type="button" role="tab">
+                            <i class="fa-solid fa-layer-group"></i> Domain Transformation
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="st-deploy-tab" data-bs-toggle="tab" data-bs-target="#st-deploy"
+                            type="button" role="tab">
+                            <i class="fa-solid fa-cloud-arrow-up"></i> Cultural Transformation
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Content Area -->
+            <div class="tab-content approach-content-card" id="methodologyContent">
+
+                <!-- Tab 1: Analysis -->
+                <div class="tab-pane fade show active" id="st-analysis" role="tabpanel">
+                    <div class="row align-items-center g-lg-5">
+                        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                            <div class="approach-media-wrapper">
+                                <img src="images/dt1.png" alt="Strategy Analysis" class="img-fluid approach-media-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold text-dark mb-3">Analysis & Strategy</h3>
+                            <ul class="approach-feature-list">
+                                <li class="approach-feature-item">
+                                    <div class="approach-feature-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div class="approach-feature-text">We start with a Strategic Assessment—where you
+                                        are, where you want to go, and how you might get there. The Assessment provides
+                                        early insight into what to expect in a potential change process following a
+                                        strategic choice, the range of values based on similar transactions, and the
+                                        other less obvious strategic options available.</div>
+                                </li>
+                                <li class="approach-feature-item">
+                                    <div class="approach-feature-icon"><i class="fa-solid fa-check"></i></div>
+                                    <div class="approach-feature-text">As with the microservices architecture we favor
+                                        in our custom software solutions, we ensure the separate operational viability
+                                        of each necessary component, so that if one component fails, it can be revised
+                                        in keeping with overall strategic goals.</div>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="approach-btn">Connect With Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Business Model Transformation -->
+                <div class="tab-pane fade" id="st-upgrade" role="tabpanel">
+                    <div class="row align-items-center g-lg-5">
+                        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 text-center">
+                            <div class="approach-media-wrapper">
+                                <img src="images/dt2.png" alt="Business Model Transformation"
+                                    class="img-fluid approach-media-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <h3 class="fw-bold text-dark mb-3">Business Model Transformation</h3>
+                            <ul class="approach-feature-list">
+                                <li class="approach-feature-item">
+                                    <div class="approach-feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                                    <div class="approach-feature-text">Reinventing business processes with data,
+                                        analytics, app designing & development, and other technologies to lower costs,
+                                        improve quality, or reduce cycle times.</div>
+                                </li>
+                                <li class="approach-feature-item">
+                                    <div class="approach-feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                                    <div class="approach-feature-text">Transform traditional business models to deliver
+                                        value in your industry using digital transformation services.</div>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="approach-btn">Connect With Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Domain Transformation -->
+                <div class="tab-pane fade" id="st-modernize" role="tabpanel">
+                    <div class="row align-items-center g-lg-5">
+                        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                            <div class="approach-media-wrapper">
+                                <img src="images/dt3.png" alt="Domain Transformation"
+                                    class="img-fluid approach-media-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold text-dark mb-3">Domain Transformation</h3>
+                            <ul class="approach-feature-list">
+                                <li class="approach-feature-item">
+                                    <div class="approach-feature-icon"><i class="fa-solid fa-cube"></i></div>
+                                    <div class="approach-feature-text">March into a new market domain by redefining
+                                        products and services, blurring industry boundaries, and creating entirely new
+                                        sets of non-traditional competitors..</div>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="approach-btn">Connect With Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Cultural Transformation  -->
+                <div class="tab-pane fade" id="st-deploy" role="tabpanel">
+                    <div class="row align-items-center g-lg-5">
+                        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 text-center">
+                            <div class="approach-media-wrapper">
+                                <img src="images/dt4.png" alt="Cultural Transformation"
+                                    class="img-fluid approach-media-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <h3 class="fw-bold text-dark mb-3">Cultural Transformation</h3>
+                            <ul class="approach-feature-list">
+                                <li class="approach-feature-item">
+                                    <div class="approach-feature-icon"><i class="fa-solid fa-terminal"></i></div>
+                                    <div class="approach-feature-text">Introduce a flexible workflow, a decentralized
+                                        decision-making process, a bias toward testing and learning, and a greater
+                                        reliance on different business ecosystems..</div>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="approach-btn">Connect With Us</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why TechRaq CTA Block -->
+    <section class="why-techraq-luminous" style="background: linear-gradient(to bottom, rgba(0, 129, 173, 0.88), rgba(0, 20, 30, 0.95)),
+        url('images/banners/digital_transformation.jpg') center/cover fixed;">
+        <div class="container position-relative">
+
+            <!-- Header Area -->
+            <div class="luminous-header">
+                <h2 class="luminous-title">Why <span>TechRAQ</span></h2>
+            </div>
+
+            <!-- Content Grid Area -->
+            <div class="row g-5">
+
+                <!-- Node Item 01 -->
+                <div class="col-lg-6">
+                    <div class="luminous-node">
+                        <span class="node-number">01</span>
+                        <div class="node-content">
+                            <span class="node-dot"></span>
+                            <p class="node-text">
+                                TechRAQ is an enterprise application development & implementation company with a
+                                <b>decade-long experience</b> that makes us a top choice for clients across the globe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node Item 02 -->
+                <div class="col-lg-6">
+                    <div class="luminous-node">
+                        <span class="node-number">02</span>
+                        <div class="node-content">
+                            <span class="node-dot"></span>
+                            <p class="node-text">
+                                We are associated with and implemented projects for <b>large corporations</b> in the US,
+                                India, and Europe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node Item 03 -->
+                <div class="col-lg-6">
+                    <div class="luminous-node">
+                        <span class="node-number">03</span>
+                        <div class="node-content">
+                            <span class="node-dot"></span>
+                            <p class="node-text">
+                                Our expertise lies in <b>high-end Data solutions, Cloud technologies</b>, establishing
+                                and maintaining Business processes both domestic & Offshore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node Item 04 -->
+                <div class="col-lg-6">
+                    <div class="luminous-node">
+                        <span class="node-number">04</span>
+                        <div class="node-content">
+                            <span class="node-dot"></span>
+                            <p class="node-text">
+                                Our unique product range provides <b>cutting-edge technology</b> solutions to major
+                                businesses requirement who are catching up with modernization and digital
+                                transformation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Row -->
+        </div> <!-- End Container -->
+    </section>
+
+    <!-- Trusted Brands / Marquee Style Section -->
+    <section class="premium-trust-section">
+        <div class="container">
+
+            <!-- Header Content -->
+            <div class="trust-header-box text-center mb-5">
+                <!-- <span class="badge-premium">OUR GLOBAL FOOTPRINT</span> -->
+                <h3 class="display-title">Trusted By Big Brands Across the Globe</h3>
+                <p class="text-muted fs-5 mx-auto" style="max-width: 650px;">
+                    Our Technology innovation impacted many brands all over the world
+                </p>
+                <a href="contact.html" class="btn-cta shadow-sm">
+                    <span>Let's Talk Business</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Brands Grid -->
+            <div class="row brand-visual-grid g-4 justify-content-center mt-5">
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="brand-card">
+                        <img src="images/new-brands/hcl.jpg" alt="HCL">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="brand-card">
+                        <img src="images/new-brands/kantar.jpg" alt="Kantar">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="brand-card">
+                        <img src="images/new-brands/vitol.jpg" alt="Vitol">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="brand-card">
+                        <img src="images/new-brands/tribocare.jpg" alt="Tribocare">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="brand-card">
+                        <img src="images/new-brands/captian-fresh.png" alt="Captain Fresh">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="brand-card">
+                        <img src="images/new-brands/gdas.png" alt="GDAS">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer Section -->
+    <footer class="tq-footer">
+      <div class="tq-footer__inner">
+        <div class="tq-footer__top">
+          <div>
+            <h2 class="tq-footer__big">Let’s build<br /><span>what’s next.</span></h2>
+            <a class="tq-footer__mail" href="mailto:info@techraq.com">info@techraq.com</a>
+          </div>
+          <a class="tq-btn tq-btn--light" href="contact.html">Start a Conversation <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="tq-footer__grid">
+          <div class="tq-footer__brand">
+            <img src="images/techraq-logo.png" alt="TechRAQ" />
+            <p>AI-enabled digital engineering, application modernization, and managed technology delivery.</p>
+            <div class="tq-social">
+              <a href="https://in.linkedin.com/company/techraq" target="_blank" rel="noopener" aria-label="TechRAQ on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:info@techraq.com" aria-label="Email TechRAQ"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="tq-footer__col">
+            <h6>Services</h6>
+          <a href="services.html#svc-modernization">AI-Led Application Modernization</a>
+          <a href="services.html#svc-transformation">Digital & AI Transformation</a>
+          <a href="services.html#svc-product">Product Engineering, Cloud & DevOps</a>
+          <a href="services.html#svc-data">Data, Analytics & Quality Engineering</a>
+          <a href="services.html#svc-operations">Process Automation & Managed Services</a>
+          </div>
+          <div class="tq-footer__col">
+            <h6>Company</h6>
+            <a href="about.html">Who We Are</a>
+            <a href="ai-accelerators.html">AI Accelerators</a>
+            <a href="industries.html">Industries</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="careers.html">Careers</a>
+          </div>
+          <div class="tq-footer__col">
+            <h6>Get in touch</h6>
+            <a href="mailto:info@techraq.com">info@techraq.com</a>
+            <a href="tel:+917088999922">+91 708 899 9922</a>
+            <a href="contact.html">Contact page</a>
+          </div>
+        </div>
+        <div class="tq-footer__mark" aria-hidden="true">TechRAQ</div>
+        <div class="tq-footer__bottom">
+          <span>© 2026 TECHRAQ INFO SOLUTIONS PVT. LTD. ALL RIGHTS RESERVED.</span>
+          <nav aria-label="Legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms &amp; Conditions</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap 5 JS Bundle (Includes Popper) -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/exit-popup.js"></script>
+      <script src="assets/js/chrome.js?v=20261007m"></script>
+  </body>
+
+</html>
+
